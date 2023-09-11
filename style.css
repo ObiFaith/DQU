@@ -1,0 +1,23 @@
+*::before, *, *::after{box-sizing: border-box; margin: 0; padding-top: 0;}
+.container{ width: min(1000px, 80%); margin-inline: auto; }
+.flex{display: flex; gap: 1rem}
+nav a, main a{text-decoration: none; color: #fff;}
+h2, h3{padding-block: 1rem;}
+ul + ul{padding-top: .5rem;}
+img{max-width: 100%;}
+body{font: 16px/1.6 "Lucida Sans Unicode", "Lucida Grande", sans-serif; color: #222}
+header, footer{padding-block: 1rem;}
+nav{background-color: #325EB2; margin: .5rem 0 1rem}
+nav ul{list-style: none; padding: 0; text-align: center;}
+nav li{padding: .3rem .5rem}
+nav li:hover, nav li:focus{background-color:#1e3c73}
+main .grid{display: grid; gap: 2rem}
+article .heading{padding-bottom: 1.3rem;}
+article ul{padding-left: 1.5rem;}
+footer{background-color: #eee; text-align: center; margin-top: 2rem}
+
+@media screen and (min-width: 992px) {
+    main .grid{grid-template-columns: 7fr 3fr;}
+    nav ul{display: flex; gap: 1rem; justify-content: center;}
+    main .book{max-width: 25rem;}
+}
